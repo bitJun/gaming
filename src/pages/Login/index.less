@@ -1,0 +1,124 @@
+.flexslider {
+  position: relative;
+  height: 100%;
+  min-width: 1240px;
+  min-height: 550px;
+  overflow: hidden;
+}
+.topContent {
+  width: 100%;
+  height: 30px;
+  background-color: #E2DCDD;
+  &_main {
+    width: 1000px;
+    height: 30px;
+    background-color: #E2DCDD;
+    font-size: 13px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_nav {
+      &_item {
+        text-decoration: none;
+        color: #615B5C;
+        cursor: pointer;
+      }
+    }
+    &_close {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+.login_main {
+  height: calc(100vh - 60px);
+  background-image: url('../../assets/images/login_bg.jpg');
+  background-size: cover;
+  position: relative;
+  &_info {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 270px;
+    height: 310px;
+    background: url('../../assets/images/login_win.png') no-repeat left top;
+    z-index: 999;
+    &_form {
+      width: 230px;
+      padding: 70px 0 0 25px;
+      &_control {
+        margin: 0 0 15px 0;
+        height: 50px;
+        background: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 221px;
+        span {
+          width: 38px;
+          height: 35px;
+          margin: 0 5px 0 10px;
+        }
+        &_value {
+          margin: 0 10px 0 0;
+          font-family: Microsoft YaHei;
+          font-size: 16px;
+          color: #000;
+          outline: none;
+          background-color: transparent;
+          border: none;
+        }
+      }
+      &_control.username span {
+        background: url('../../assets/images/login_ico.png') no-repeat left top;
+      }
+      &_control.password span {
+        background: url('../../assets/images/login_ico.png') no-repeat left -35px;
+      }
+      &_actions {
+        display: flex;
+        height: 52px;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.footer {
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background: #646464;
+  text-align: center;
+}
+.enter {
+  width: 120px;
+  height: 52px;
+  background: url('../../assets/images/login_bu.png') no-repeat left top;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+.enter:hover {
+  background: url('../../assets/images/login_bu.png') no-repeat left -52px;
+}
+.reg {
+  width: 88px;
+  height: 52px;
+  margin-right: 9px;
+  background: url('../../assets/images/login_bu.png') no-repeat left -104px;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+.reg:hover {
+  background: url('../../assets/images/login_bu.png') no-repeat left -156px;
+}
+.test {
+  width: 221px;
+  height: 46px;
+  background: url('../../assets/images/login_bu.png') no-repeat left -208px;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+.test:hover {
+  background: url('../../assets/images/login_bu.png') no-repeat left -254px;
+}
