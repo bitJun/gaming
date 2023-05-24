@@ -11,6 +11,10 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
+    port: 8000,
+    // 是否开启 https
+    https: false,
     proxy: {
       "/api": {
         target: "https://fi30210888.zicp.fun",

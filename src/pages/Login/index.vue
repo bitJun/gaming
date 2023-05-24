@@ -24,8 +24,8 @@
             <input type="password" class="login_main_info_form_control_value" />
           </div>
           <div class="login_main_info_form_actions">
-            <div class="enter"></div>
-            <div class="reg"></div>
+            <div class="enter" @click="doLogin()"></div>
+            <div class="reg" @click="doRegister()"></div>
           </div>
           <div class="login_main_info_form_action">
             <div class="test"></div>
@@ -42,6 +42,18 @@ import {
   reactive,
   onMounted
 } from 'vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
+
+const doRegister = () => {
+  router.push({
+    path: '/register',
+  })
+}
+
+const doLogin = () => {
+
+}
 </script>
 <style lang="less" scoped>
 @import url('./index.less');
